@@ -4,15 +4,11 @@
     <div class="boxcolumn">
       <Top/>
       <About/>
-      <Game/>
-    </div>
-    <div class="boxcolumn">
+      <Game/>   
       <Member/>
-    </div>
-    <div class="boxcolumn">
       <Activity/>
-    </div>
     <Footer/>
+    </div>
   </div>
 </template>
 
@@ -52,6 +48,8 @@ function scrollanimation(){
   
           if (scroll > pos - windowHeight){
               $(this).addClass("active");
+          }else{
+              $(this).removeClass("active");
           }
       });
   }

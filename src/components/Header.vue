@@ -2,6 +2,7 @@
     <header>
         <div class="headercontent">
             <div class="headericon">
+                <a href="#top"></a>
                 <img src="@/assets/imgs/佐竹プロジェクトロゴver1.png" alt="">
             </div>
             <div class="desktopnav">
@@ -39,12 +40,19 @@ header {
 }
 
 .headericon {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     box-sizing: border-box;
     height: 100%;
     padding: 10px;
+}
+
+.headericon a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .headericon img {

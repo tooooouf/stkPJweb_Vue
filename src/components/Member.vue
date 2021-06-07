@@ -8,60 +8,70 @@
                                 <img src="@/assets/imgs/gaien.jpg" alt="">
                             </div>
                             <p class="membername">ほかぞの</p>
+                            <p class="memberrole">motioner</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/kine.jpg" alt="">
                             </div>
                             <p class="membername">きね</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/gaien.jpg" alt="">
-                            </div>
-                            <p class="membername">こにし</p>
+                            <p class="memberrole">planner, effecter</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/rem.jpg" alt="">
                             </div>
                             <p class="membername">やまもと</p>
+                            <p class="memberrole">GAMEprogrammer system engineer</p>
+                        </div>
+                        <div class="memberwrap">
+                            <div class="membericon">
+                                <img src="@/assets/imgs/gaien.jpg" alt="">
+                            </div>
+                            <p class="membername">こにし</p>
+                            <p class="memberrole">planner, designer motioner</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/rehu.jpg" alt="">
                             </div>
                             <p class="membername">ほりえ</p>
+                            <p class="memberrole">RCprogrammer</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/fujikko.jpg" alt="">
                             </div>
                             <p class="membername">ふじの</p>
+                            <p class="memberrole">WEBprogrammer</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/yasoda.jpg" alt="">
                             </div>
                             <p class="membername">やそだ</p>
+                            <p class="memberrole">composer</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/yosi.jpg" alt="">
                             </div>
                             <p class="membername">よしだ</p>
+                            <p class="memberrole">illustrator, designer</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/hujimoto.jpg" alt="">
                             </div>
                             <p class="membername">ふじもと</p>
+                            <p class="memberrole">illustrator</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/gaien.jpg" alt="">
                             </div>
                             <p class="membername">さたけ先生</p>
+                            <p class="memberrole">teacher</p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +92,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -94,6 +104,11 @@
     align-items: center;
     width: 25%;
     padding: 10px;
+    text-align: center;
+}
+
+.memberwrap p{
+    margin: 5px;
 }
 
 .membericon{
@@ -106,12 +121,8 @@
     box-shadow: #4B4B4B 2px 2px 3px;
 }
 
-.memberwrap :hover{
-    transform: scale(1.03);
+.membericon :hover{
+    transform: scale(1.05);
     transition-duration: 0.5s;
-}
-
-.membername{
-    margin: 0;
 }
 </style>
