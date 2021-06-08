@@ -45,12 +45,13 @@ function scrollanimation(){
   
       jQuery('.contents').not('.active').each(function(){
           var pos = $(this).offset().top;
-  
-          if (scroll > pos - windowHeight){
-              $(this).addClass("active");
-          }else{
-              $(this).removeClass("active");
-          }
+          var height = $(this).height();
+            if (pos <= scroll + windowHeight && pos + height >= scroll) {
+                $(this).addClass('active');
+             
+            }else{
+                $(this).removeClass('active') ;
+            }
       });
   }
   $(window).scroll(function (){
@@ -94,6 +95,7 @@ body {
 
 .container {
     width: 100%;
+    overflow: hidden;
 }
 
 .boxcolumn {
@@ -114,7 +116,7 @@ section {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    scroll-snap-align: start;
+    padding-bottom: 50px;
 }
 
 .contents{
@@ -122,9 +124,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     max-width: 900px;
     padding: 0 5% 0 5%;
     opacity: 0;
+    overflow: hidden;
 }
 
 .contents.active{

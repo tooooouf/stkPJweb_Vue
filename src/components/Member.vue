@@ -87,6 +87,12 @@
     color: #4EA1FF;
 }
 
+#member ::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .memberlist{
     display: flex;
     flex-direction: row;
