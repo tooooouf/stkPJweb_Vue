@@ -5,7 +5,7 @@
             <h1 class="sectiontitle">game</h1>
             <div class="gameimgwrap">
                 <div class="gameimg titleimg">
-                    <img src="@/assets/imgs/IMG_1162_1.png" alt="">
+                    <img src="@/assets/imgs/IMG_1172-min.jpg" alt="">
                 </div>
                 <div class="gameimg portrait">
                     <img src="@/assets/imgs/立ち絵4月28日.png" alt="" id="">
@@ -37,13 +37,13 @@ export default ({
     methods:{
         titleimg(){
             gsap.to('.titleimg',{
-                x:500,
+                x:700,
                 scrollTrigger:{
                     trigger:'#game',
                     start: 'top 50%',
                     end: 'top 0%',
                     scrub: 1,
-                    markers: true
+                    //markers: true
                 }                
             })
         },
@@ -86,19 +86,20 @@ export default ({
     height: 100%;
 }
 
+.gameimg img{
+    position: relative;
+    width: 100%;
+}
+
 .titleimg{
-    left: -500px;
-    height: 70%;
+    left: -700px;
+    width: 100%;
 }
 
 .portrait{
     right: -500px;
-    width: 100%;
-}
-
-.gameimg img{
-    position: relative;
-    width: 100%;
+    width: 60%;
+    height: auto;
 }
 
 .readmore{

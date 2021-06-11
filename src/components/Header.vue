@@ -6,6 +6,7 @@
                 <img src="@/assets/imgs/佐竹プロジェクトロゴver1.png" alt="">
             </div>
             <div class="desktopnav">
+                <a href="#top">top</a>
                 <a href="#about">about</a>
                 <a href="#game">game</a>
                 <a href="#member">member</a>
@@ -49,7 +50,7 @@ header {
     padding: 10px;
 }
 
-.headericon a{
+.headericon a {
     position: absolute;
     width: 100%;
     height: 100%;

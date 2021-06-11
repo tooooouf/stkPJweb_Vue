@@ -7,9 +7,9 @@
       <Game/>   
       <Member/>
       <Activity/>
-    <Footer/>
     </div>
   </div>
+  <Footer/>
 </template>
 
 <script>
