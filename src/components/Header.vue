@@ -86,4 +86,16 @@ header {
 .desktopnav a:hover::after{
     width: 100%;
 }
+
+@media screen and (max-width:768px) {
+    .desktopnav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 1.1;
+    }
+}
+
 </style>

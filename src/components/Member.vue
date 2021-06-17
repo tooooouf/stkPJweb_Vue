@@ -5,7 +5,7 @@
                     <div class="memberlist">
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/gaien.jpg" alt="">
+                                <img src="@/assets/imgs/member/gaien.jpg" alt="">
                             </div>
                             <div class="namewrap">
                                 <div class="representative">
@@ -18,7 +18,7 @@
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/kine.jpg" alt="">
+                                <img src="@/assets/imgs/member/kine.jpg" alt="">
                             </div>
                             <div class="namewrap">
                                 <div class="representative">
@@ -31,7 +31,7 @@
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/rem.jpg" alt="">
+                                <img src="@/assets/imgs/member/rem.jpg" alt="">
                             </div>
                             <div class="namewrap">
                                 <div class="representative">
@@ -44,7 +44,7 @@
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/konishi.jpg" alt="">
+                                <img src="@/assets/imgs/member/konishi.jpg" alt="">
                             </div>
                             <div class="namewrap">
                                 <p class="program">CD</p>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/rehu.jpg" alt="">
+                                <img src="@/assets/imgs/member/rehu.jpg" alt="">
                             </div>
                             <div class="namewrap">
                                 <p class="program">PC</p>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/fujikko.jpg" alt="">
+                                <img src="@/assets/imgs/member/fujikko.jpg" alt="">
                             </div>
                             <div class="namewrap">
                                 <p class="program">PC</p>
@@ -74,7 +74,7 @@
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/yasoda.jpg" alt="">
+                                <img src="@/assets/imgs/member/yasoda.jpg" alt="">
                             </div>
                             <div class="namewrap">
                                 <p class="program">PC</p>
@@ -84,21 +84,21 @@
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/yosi.jpg" alt="">
+                                <img src="@/assets/imgs/member/yosi.jpg" alt="">
                             </div>
                             <p class="membername">よしだ</p>
                             <p class="memberrole">illustrator, designer</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/hujimoto.jpg" alt="">
+                                <img src="@/assets/imgs/member/hujimoto.jpg" alt="">
                             </div>
                             <p class="membername">ふじもと</p>
                             <p class="memberrole">illustrator</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
-                                <img src="@/assets/imgs/satake.jpg" alt="">
+                                <img src="@/assets/imgs/member/satake.jpg" alt="">
                             </div>
                             <p class="membername">さたけ先生</p>
                             <p class="memberrole">teacher</p>
@@ -117,10 +117,17 @@
     color: #4EA1FF;
 }
 
-#member ::after{
+#member::after{
+    content: "";
     position: absolute;
+    top: 10%;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-image: url(../assets/imgs/background/memberbg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .memberlist{
@@ -140,7 +147,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: calc( ( 100% – 60px ) / 3 );
+    width: calc( ( 100% - 60px ) / 3 );
+    margin-bottom: 10px;
 }
 
 .memberwrap p{
@@ -192,7 +200,13 @@
 }
 
 @media screen and (max-width:768px) {
-    
+    .memberlist{
+        width: 80%;
+        flex-direction: column;
+    }
+    .memberwrap{
+        width: 100%;
+    }
 }
 
 </style>

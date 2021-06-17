@@ -7,6 +7,7 @@
       <Game/>   
       <Member/>
       <Activity/>
+      <Comingsoon/>
     </div>
   </div>
   <Footer/>
@@ -20,6 +21,7 @@ import Game from './components/Game'
 import Member from './components/Member'
 import Activity from './components/Activity'
 import Footer from './components/Footer'
+import Comingsoon from './components/Comingsoon'
 import jQuery from 'jquery'
 
 export default {
@@ -31,6 +33,7 @@ export default {
     Game,
     Member,
     Activity,
+    Comingsoon,
     Footer
   }
 }
@@ -96,6 +99,7 @@ body {
 .container {
     width: 100%;
     overflow: hidden;
+    z-index: 600;
 }
 
 .boxcolumn {
@@ -103,7 +107,6 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    scroll-snap-type: y mandatory;
 }
 
 section {
@@ -111,12 +114,27 @@ section {
 }
 
 .box {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     min-height: 100vh;
     padding-bottom: 50px;
+    z-index: 100;
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(./assets/imgs/background/和紙.jpg);
+    opacity: 0.2;
 }
 
 .contents{
@@ -129,6 +147,7 @@ section {
     padding: 0 5% 0 5%;
     opacity: 0;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .contents.active{

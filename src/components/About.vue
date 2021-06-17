@@ -18,6 +18,7 @@
 }
 
 #about h2, h3 {
+    text-align: center;
     margin: 0;
 }
 </style>

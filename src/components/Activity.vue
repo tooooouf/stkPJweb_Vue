@@ -15,8 +15,25 @@
 </template>
 
 <style>
+#activity{
+    background-color: #FFFFFF;
+}
+
 #activity .sectiontitle{
     color: #fff94e;
+}
+
+#activity::after{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/imgs/background/activitybg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .activitywrap{
@@ -37,7 +54,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-right: solid 2px #4EA1FF;
+    height: 80%;
+    box-sizing: border-box;
+    border-right: solid 3px #4EA1FF;
     padding: 10% 5% 10% 0;
     color: #4EA1FF;
 }
@@ -88,6 +107,7 @@ iframe{
     }
 
     .activityhead{
+        justify-content: center;
         width: 100%;
         border-right: none;
         border-bottom: solid 2px #4EA1FF;
@@ -96,7 +116,7 @@ iframe{
     }
 
     .activitycontent{
-        width: 80%;
+        width: 100%;
         height: 60vh;
     }
 }

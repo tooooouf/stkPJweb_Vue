@@ -14,6 +14,7 @@ footer {
     box-shadow: -1px -1px 5px;
     background-color: #ffffff;
     text-align: center;
+    z-index: 9999;
 }
 
 .footcontent {

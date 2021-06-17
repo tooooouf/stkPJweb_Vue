@@ -5,18 +5,20 @@
             <h1 class="sectiontitle">game</h1>
             <div class="gameimgwrap">
                 <div class="gameimg titleimg">
-                    <img src="@/assets/imgs/IMG_1172-min.jpg" alt="">
+                    <img src="@/assets/imgs/game/title.jpg" alt="">
                 </div>
                 <div class="gameimg portrait">
-                    <img src="@/assets/imgs/立ち絵4月28日.png" alt="" id="">
+                    <img src="@/assets/imgs/game/portrait.png" alt="">
                 </div>
-                
+                <div class="gameimg muddoll">
+                    <img src="@/assets/imgs/game/muddoll.png" alt="">
+                </div>
             </div>
             <h2>悪霊ばすたー</h2>
             <p class="sentence">リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。</p>
             <div class="readmore">
                 <a href="" target="_blank" rel="noopener noreferrer"></a>
-                <p>ゲーム公式サイトへ</p>
+                <p>Coming soon…</p>
             </div>
         </div>
     </section> 
@@ -32,6 +34,7 @@ export default ({
     mounted(){
         this.titleimg();
         this.portrait();
+        this.muddoll();
     },
 
     methods:{
@@ -49,6 +52,17 @@ export default ({
         },
         portrait(){
             gsap.to('.portrait',{
+                x:-500,
+                scrollTrigger:{
+                    trigger: '#game',
+                    start: 'top 50%',
+                    end: 'top 0%',
+                    scrub: 3,
+                }
+            })
+        },
+        muddoll(){
+            gsap.to('.muddoll',{
                 x:-500,
                 scrollTrigger:{
                     trigger: '#game',
@@ -73,17 +87,15 @@ export default ({
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 600px;
+    max-width: 700px;
     height: 25em;
 }
 
 .gameimg{
     position: relative;
     display: flex;
-    align-items: center;
     max-width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .gameimg img{
@@ -92,13 +104,23 @@ export default ({
 }
 
 .titleimg{
+    align-items: center;
     left: -700px;
     width: 100%;
 }
 
 .portrait{
+    align-items: center;
     right: -500px;
     width: 60%;
+    height: auto;
+}
+
+.muddoll{
+    align-items: flex-end;
+    right: -500px;
+    bottom: 0;
+    width: 30%;
     height: auto;
 }
 
@@ -121,4 +143,11 @@ export default ({
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width:768px) {
+    .gameimgwrap{
+        height: auto;
+    }
+}
+
 </style>
