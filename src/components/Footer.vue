@@ -9,12 +9,13 @@
 
 <style>
 footer {
+    position: relative;
     height: max-content;
     bottom: 0;
-    box-shadow: -1px -1px 5px;
+    box-shadow: #8f8f8f -1px -1px 10px;
     background-color: #ffffff;
     text-align: center;
-    z-index: 9999;
+    z-index: 998;
 }
 
 .footcontent {

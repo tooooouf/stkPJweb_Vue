@@ -30,7 +30,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/imgs/background/activitybg.svg);
+    background-image: url(../assets/imgs/background/activitybg.png);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
@@ -68,14 +68,14 @@
     height: 100%;
     border: solid 5px #4EA1FF;
     padding: 1%;
-    z-index: 1;
+    z-index: 15;
 }
 
 iframe{
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 990;
 }
 
 .activitycontent::before, .activitycontent::after{
@@ -83,7 +83,7 @@ iframe{
     position: absolute;
     display: block;
     background-color: #FFFFFF;
-    z-index: 1;
+    z-index: 20;
 }
 
 .activitycontent::before{

@@ -86,14 +86,20 @@
                             <div class="membericon">
                                 <img src="@/assets/imgs/member/yosi.jpg" alt="">
                             </div>
-                            <p class="membername">よしだ</p>
+                            <div class="namewrap">
+                                <p class="program">CD</p>
+                                <p class="membername">よしだ</p>
+                            </div>
                             <p class="memberrole">illustrator, designer</p>
                         </div>
                         <div class="memberwrap">
                             <div class="membericon">
                                 <img src="@/assets/imgs/member/hujimoto.jpg" alt="">
                             </div>
-                            <p class="membername">ふじもと</p>
+                            <div class="namewrap">
+                                <p class="program">CD</p>
+                                <p class="membername">ふじもと</p>
+                            </div>
                             <p class="memberrole">illustrator</p>
                         </div>
                         <div class="memberwrap">
@@ -124,7 +130,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/imgs/background/memberbg.svg);
+    background-image: url(../assets/imgs/background/memberbg.png);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;

@@ -67,6 +67,10 @@ function scrollanimation(){
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
 html {
     display: block;
     position: absolute;
@@ -85,7 +89,7 @@ body {
     padding: 0;
     margin: 0;
     color: #4B4B4B;
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 #app{
@@ -99,7 +103,6 @@ body {
 .container {
     width: 100%;
     overflow: hidden;
-    z-index: 600;
 }
 
 .boxcolumn {
@@ -138,6 +141,7 @@ section {
 }
 
 .contents{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +151,7 @@ section {
     padding: 0 5% 0 5%;
     opacity: 0;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 997;
 }
 
 .contents.active{
@@ -158,6 +162,7 @@ section {
 .sectiontitle{
     font-size: 40px;
     margin-bottom: 50px;
+    font-family: 'Space Grotesk', sans-serif;
     text-shadow: #4B4B4B 3px 3px;
 }
 
@@ -169,11 +174,11 @@ section {
 @keyframes fadein{
   0%{
     transform: translateY(50px);
-    opacity: 0%;
+    opacity: 0;
   }
   100%{
     transform: translateY(0px);
-    opacity: 100%;
+    opacity: 100;
   }
 }
 </style>

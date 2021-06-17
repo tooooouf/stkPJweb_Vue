@@ -14,7 +14,7 @@
                     <img src="@/assets/imgs/game/muddoll.png" alt="">
                 </div>
             </div>
-            <h2>悪霊ばすたー</h2>
+            <h2 id="gametitle">悪霊ばすたー</h2>
             <p class="sentence">リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。</p>
             <div class="readmore">
                 <a href="" target="_blank" rel="noopener noreferrer"></a>
@@ -78,6 +78,9 @@ export default ({
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
 #game{
     background-color: #4EA1FF;
     color: #ffffff;
@@ -122,6 +125,12 @@ export default ({
     bottom: 0;
     width: 30%;
     height: auto;
+}
+
+#gametitle{
+    font-size: 35px;
+    font-family: 'Reggae One', cursive;
+    text-shadow: #4DB4C4 3px 3px;
 }
 
 .readmore{
