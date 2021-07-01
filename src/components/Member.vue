@@ -214,7 +214,7 @@ export default {
 }
 
 .memberrole{
-    max-width: 100%;
+    max-width: 80%;
 }
 
 @media screen and (max-width:768px) {
