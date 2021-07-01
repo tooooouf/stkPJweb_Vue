@@ -11,7 +11,7 @@
 <style>
 
 #comingsoon{
-    min-height: max-content;
+    min-height: 60vh;
 }
 
 .comingimg{
@@ -20,6 +20,12 @@
 
 .comingimg img{
     width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    #comingsoon{
+        min-height: 30vh;
+    }
 }
 
 </style>

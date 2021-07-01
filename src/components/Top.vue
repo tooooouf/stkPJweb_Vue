@@ -15,10 +15,17 @@
 }
 
 .logo{
-    width: 100%;
+    width: 80%;
 }
 
 .logo img{
     width: 100%;
 }
+
+@media screen and (max-width:768px) {
+    .logo{
+        width: 100%;
+    }
+}
+
 </style>

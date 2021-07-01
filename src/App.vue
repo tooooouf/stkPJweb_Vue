@@ -1,16 +1,18 @@
 <template>
-  <Header/>
-  <div class="container">
-    <div class="boxcolumn">
-      <Top/>
-      <About/>
-      <Game/>   
-      <Member/>
-      <Activity/>
-      <Comingsoon/>
+  <div>
+    <Header/>
+    <div class="container">
+      <div class="boxcolumn">
+        <Top/>
+        <About/>
+        <Game/>   
+        <Member/>
+        <Activity/>
+        <Comingsoon/>
+      </div>
     </div>
+    <Footer/>
   </div>
-  <Footer/>
 </template>
 
 <script>
@@ -20,8 +22,8 @@ import About from './components/About'
 import Game from './components/Game'
 import Member from './components/Member'
 import Activity from './components/Activity'
-import Footer from './components/Footer'
 import Comingsoon from './components/Comingsoon'
+import Footer from './components/Footer'
 import jQuery from 'jquery'
 
 export default {
@@ -137,7 +139,7 @@ section {
     height: 100%;
     z-index: 1;
     background-image: url(./assets/imgs/background/和紙.jpg);
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .contents{
@@ -161,14 +163,15 @@ section {
 
 .sectiontitle{
     font-size: 40px;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 0;
     font-family: 'Space Grotesk', sans-serif;
     text-shadow: #4B4B4B 3px 3px;
 }
 
 .sentence{
+    margin-bottom: 50px;
     max-width: 600px;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 @keyframes fadein{

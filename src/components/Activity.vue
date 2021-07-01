@@ -64,7 +64,7 @@
 .activitycontent{
     position: relative;
     box-sizing: border-box;
-    width: 55%;
+    width: 60%;
     height: 100%;
     border: solid 5px #4EA1FF;
     padding: 1%;
@@ -104,6 +104,7 @@ iframe{
     .activitywrap{
         flex-direction: column;
         height: max-content;
+        padding: 0;
     }
 
     .activityhead{
@@ -117,7 +118,7 @@ iframe{
 
     .activitycontent{
         width: 100%;
-        height: 60vh;
+        height: 70vh;
     }
 }
 

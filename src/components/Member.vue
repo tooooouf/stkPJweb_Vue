@@ -3,116 +3,125 @@
                 <div class="contents">
                     <h1 class="sectiontitle">member</h1>
                     <div class="memberlist">
-                        <div class="memberwrap">
+                        <div class="memberwrap" v-for="member in members" :key="member.id">
                             <div class="membericon">
-                                <img src="@/assets/imgs/member/gaien.jpg" alt="">
+                                <img v-bind:src="member.memberIcon" alt="">
                             </div>
                             <div class="namewrap">
-                                <div class="representative">
-                                    <img src="@/assets/imgs/王冠金.png" alt="">
+                                <div :class="{'representative' : member.isRepresentative, 'noRepresentative' : !member.isRepresentative}">
+                                    <img :src="member.representative" alt="">
                                 </div>
-                                <p class="program">CD</p>
-                                <p class="membername">ほかぞの</p>
+                                <p class="membername">{{member.memberName}}</p>
                             </div>
-                            <p class="memberrole">motioner</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/kine.jpg" alt="">
-                            </div>
-                            <div class="namewrap">
-                                <div class="representative">
-                                    <img src="@/assets/imgs/王冠銀.png" alt="">
-                                </div>
-                                <p class="program">NS</p>
-                                <p class="membername">きね</p>
-                            </div>
-                            <p class="memberrole">planner, effecter</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/rem.jpg" alt="">
-                            </div>
-                            <div class="namewrap">
-                                <div class="representative">
-                                    <img src="@/assets/imgs/王冠銀.png" alt="">
-                                </div>
-                                <p class="program">PC</p>
-                                <p class="membername">やまもと</p>
-                            </div>
-                            <p class="memberrole">GAMEprogrammer<br>system engineer</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/konishi.jpg" alt="">
-                            </div>
-                            <div class="namewrap">
-                                <p class="program">CD</p>
-                                <p class="membername">こにし</p>
-                            </div>
-                            <p class="memberrole">planner, designer motioner</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/rehu.jpg" alt="">
-                            </div>
-                            <div class="namewrap">
-                                <p class="program">PC</p>
-                                <p class="membername">ほりえ</p>
-                            </div>
-                            <p class="memberrole">RCprogrammer</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/fujikko.jpg" alt="">
-                            </div>
-                            <div class="namewrap">
-                                <p class="program">PC</p>
-                                <p class="membername">ふじの</p>
-                            </div>
-                            <p class="memberrole">WEBprogrammer</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/yasoda.jpg" alt="">
-                            </div>
-                            <div class="namewrap">
-                                <p class="program">PC</p>
-                                <p class="membername">やそだ</p>
-                            </div>
-                            <p class="memberrole">composer</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/yosi.jpg" alt="">
-                            </div>
-                            <div class="namewrap">
-                                <p class="program">CD</p>
-                                <p class="membername">よしだ</p>
-                            </div>
-                            <p class="memberrole">illustrator, designer</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/hujimoto.jpg" alt="">
-                            </div>
-                            <div class="namewrap">
-                                <p class="program">CD</p>
-                                <p class="membername">ふじもと</p>
-                            </div>
-                            <p class="memberrole">illustrator</p>
-                        </div>
-                        <div class="memberwrap">
-                            <div class="membericon">
-                                <img src="@/assets/imgs/member/satake.jpg" alt="">
-                            </div>
-                            <p class="membername">さたけ先生</p>
-                            <p class="memberrole">teacher</p>
+                            <p class="memberrole">{{member.memberRole}}</p>
                         </div>
                     </div>
                 </div>
             </section>
 </template>
+
+<script>
+export default {
+    data(){
+        return{
+            members:[
+                {
+                    id: 1,
+                    memberIcon: require('@/assets/imgs/member/gaien.jpg'),
+                    representative: require('@/assets/imgs/王冠金.png'),
+                    isRepresentative: true,
+                    memberProgram: 'CD',
+                    memberName: 'ほかぞの',
+                    memberRole: 'motioner'
+                },
+                {
+                    id: 2,
+                    memberIcon: require('@/assets/imgs/member/kine.jpg'),
+                    representative: require('@/assets/imgs/王冠銀.png'),
+                    isRepresentative: true,
+                    memberProgram: 'NS',
+                    memberName: 'きね',
+                    memberRole: 'planner, effecter'
+                },
+                {
+                    id: 3,
+                    memberIcon: require('@/assets/imgs/member/rem.jpg'),
+                    representative: require('@/assets/imgs/王冠銀.png'),
+                    isRepresentative: true,
+                    memberProgram: 'PC',
+                    memberName: 'やまもと',
+                    memberRole: 'GAMEprogrammer systemEngineer'
+                },
+                {
+                    id: 4,
+                    memberIcon: require('@/assets/imgs/member/konishi.jpg'),
+                    representative: null,
+                    isRepresentative: false,
+                    memberProgram: 'CD',
+                    memberName: 'こにし',
+                    memberRole: 'planner, designer motioner'
+                },
+                {
+                    id: 5,
+                    memberIcon: require('@/assets/imgs/member/rehu.jpg'),
+                    representative: null,
+                    isRepresentative: false,
+                    memberProgram: 'PC',
+                    memberName: 'ほりえ',
+                    memberRole: 'RCprogrammer'
+                },
+                {
+                    id: 6,
+                    memberIcon: require('@/assets/imgs/member/fujikko.jpg'),
+                    representative: null,
+                    isRepresentative: false,
+                    memberProgram: 'PC',
+                    memberName: 'ふじの',
+                    memberRole: 'WEBprogrammer'
+                },
+                {
+                    id: 7,
+                    memberIcon: require('@/assets/imgs/member/yasoda.jpg'),
+                    representative: null,
+                    isRepresentative: false,
+                    memberProgram: 'PC',
+                    memberName: 'やそだ',
+                    memberRole: 'composer'
+                },
+                {
+                    id: 8,
+                    memberIcon: require('@/assets/imgs/member/yosi.jpg'),
+                    representative: null,
+                    isRepresentative: false,
+                    memberProgram: 'CD',
+                    memberName: 'よしだ',
+                    memberRole: 'illustrator, designer'
+                },
+                {
+                    id: 9,
+                    memberIcon: require('@/assets/imgs/member/hujimoto.jpg'),
+                    representative: null,
+                    isRepresentative: false,
+                    memberProgram: 'CD',
+                    memberName: 'ふじもと',
+                    memberRole: 'illustrator'
+                },
+                {
+                    id: 10,
+                    memberIcon: require('@/assets/imgs/member/satake.jpg'),
+                    representative: null,
+                    isRepresentative: false,
+                    memberProgram: null,
+                    memberName: 'さたけ先生',
+                    memberRole: 'teacher'
+                },
+                
+            ]
+        }
+        
+    }
+}
+</script>
 
 <style>
 #member{
@@ -191,6 +200,9 @@
     position: relative;
     width: 10%;
 }
+.noRepresentative{
+    display: none;
+}
 
 .representative img{
     position: relative;
@@ -202,7 +214,7 @@
 }
 
 .memberrole{
-    max-width: 65%;
+    max-width: 100%;
 }
 
 @media screen and (max-width:768px) {
@@ -212,6 +224,9 @@
     }
     .memberwrap{
         width: 100%;
+    }
+    .memberrole{
+        max-width: 50%;
     }
 }
 

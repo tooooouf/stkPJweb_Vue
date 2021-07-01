@@ -15,10 +15,11 @@
                 </div>
             </div>
             <h2 id="gametitle">悪霊ばすたー</h2>
-            <p class="sentence">リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。リズムに合わせてシンボルを描き、迫りくる悪霊を退治するゲーム。</p>
+            <p class="sentence">ノリノリの音楽に合わせて、シンボルを描き、迫りくる悪霊を退治するリズムアクションゲーム。筆型のコントローラーを大きく振り回したり、敵の攻撃をしゃがんで避けたりとダイナミックな動きでゲームを楽しもう。エンドレス制を導入しているため、プレイヤーの体力orスキルの限界が来るまで終わらない！また、何度も繰り返し遊びたくなるように、様々なランダム要素を導入。ゲームにもっと詳しく知りたい方は専用webサイトへ！</p>
             <div class="readmore">
                 <a href="" target="_blank" rel="noopener noreferrer"></a>
                 <p>Coming soon…</p>
+                <span></span>
             </div>
         </div>
     </section> 
@@ -139,10 +140,10 @@ export default ({
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: max-content;
     background-color: #ffffff;
     border-radius: 50px;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     color: #4B4B4B;
     line-height: 1;
 }
@@ -151,6 +152,31 @@ export default ({
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.readmore p{
+    color: #4EA1FF;
+}
+
+.readmore span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: #4EA1FF;
+}
+.readmore span::before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 @media screen and (max-width:768px) {
