@@ -11,6 +11,7 @@
                                 <div :class="{'representative' : member.isRepresentative, 'noRepresentative' : !member.isRepresentative}">
                                     <img :src="member.representative" alt="">
                                 </div>
+                                <p class="program">{{member.memberProgram}}</p>
                                 <p class="membername">{{member.memberName}}</p>
                             </div>
                             <p class="memberrole">{{member.memberRole}}</p>
