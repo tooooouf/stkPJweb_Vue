@@ -17,8 +17,8 @@
             <h2 id="gametitle">悪霊ばすたー</h2>
             <p class="sentence">ノリノリの音楽に合わせて、シンボルを描き、迫りくる悪霊を退治するリズムアクションゲーム。筆型のコントローラーを大きく振り回したり、敵の攻撃をしゃがんで避けたりとダイナミックな動きでゲームを楽しもう。エンドレス制を導入しているため、プレイヤーの体力orスキルの限界が来るまで終わらない！また、何度も繰り返し遊びたくなるように、様々なランダム要素を導入。ゲームにもっと詳しく知りたい方は専用webサイトへ！</p>
             <div class="readmore">
-                <a href="" target="_blank" rel="noopener noreferrer"></a>
-                <p>Coming soon…</p>
+                <router-link to="/akuryoubuster"/>
+                <p>ゲーム専用サイトへGO！</p>
                 <span></span>
             </div>
         </div>
