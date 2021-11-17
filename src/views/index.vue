@@ -1,27 +1,25 @@
 <template>
-  <div>
-    <Header/>
-      <div class="boxcolumn">
-        <Top/>
-        <About/>
-        <Game/>   
-        <Member/>
-        <Activity/>
-        <Comingsoon/>
-      </div>
-    <Footer/>
-  </div>
+  <Header/>
+    <div class="boxcolumn">
+      <Top/>
+      <About/>
+      <Game/>   
+      <Member/>
+      <Activity/>
+      <Comingsoon/>
+    </div>
+  <Footer/>
 </template>
 
 <script>
-import Header from '@/components/Header'
-import Top from '@/components/Top'
-import About from '@/components/About'
-import Game from '@/components/Game'
-import Member from '@/components/Member'
-import Activity from '@/components/Activity'
-import Comingsoon from '@/components/Comingsoon'
-import Footer from '@/components/Footer'
+import Header from '@/components/PJ/Header.vue'
+import Top from '@/components/PJ/Top.vue'
+import About from '@/components/PJ/About.vue'
+import Game from '@/components/PJ/Game.vue'
+import Member from '@/components/PJ/Member.vue'
+import Activity from '@/components/PJ/Activity.vue'
+import Comingsoon from '@/components/PJ/Comingsoon.vue'
+import Footer from '@/components/PJ/Footer.vue'
 import jQuery from 'jquery'
 
 export default {
@@ -71,45 +69,12 @@ function scrollanimation(){
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
-html {
-    display: block;
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-    color: #4B4B4B;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-#app{
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-    width: 100%;
-    overflow: hidden;
-}
-
 .boxcolumn {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 section {
