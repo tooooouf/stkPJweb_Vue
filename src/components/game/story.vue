@@ -46,6 +46,7 @@
 }
 
 .storyCard{
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
@@ -65,5 +66,21 @@
 .storyImg{
   width: 50%;
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .storyCard{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 3%;
+  }
+  
+  .storyCard:nth-child(3){
+    flex-direction: column;
+  }
+
+  .storyImg, .storySentence{
+    width: 100%;
+  }
 }
 </style>
