@@ -1,6 +1,6 @@
 <template> 
   <section class="chapter" id="exorcism">
-    <div class="wrap exorcismWrap">
+    <div class="chapterWrap">
       <div class="chapterTitle">
         <img src="@/assets/gamepage/悪霊退散/悪霊退散タイトル.png" alt="">
       </div>
@@ -11,12 +11,12 @@
             <img src="" alt="">
           </div>
         </div>
-        <div class="exorcismSentence">
+        <div class="exorcismText">
           <p>解説が入る</p>
         </div>
       </div>
       <div class="exorcismCard">
-        <div class="exorcismSentence">
+        <div class="exorcismText">
           <p>解説が入る</p>
         </div>
         <div class="exorcismImg">
@@ -29,15 +29,21 @@
 
 <style scoped>
 #exorcism{
-  background: url(../../assets/gamepage/悪霊退散/悪霊退散背景.png) top center / cover no-repeat;
+  position: relative;
+  background: url(../../assets/gamepage/悪霊退散/悪霊退散四角背景.png) top center / cover no-repeat;
   color: #ffffff;
 }
 
-.exorcismWrap{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#exorcism::before{
+  position: absolute;
+  top: -48px;
   width: 100%;
+  height: 0;
+  padding-bottom: 50px;
+  height: auto;
+  background: url(../../assets/gamepage/悪霊退散/悪霊退散ギザギザ部分.png) center top repeat-x;
+  background-size: auto 100%;
+  content: "";
 }
 
 .exorcismCard{
@@ -45,7 +51,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .exorcismImg{
@@ -58,7 +64,7 @@
   position: absolute;
 }
 
-.exorcismSentence{
+.exorcismText{
   width: 40%;
   padding: 10px;
 }
@@ -67,14 +73,13 @@
   .exorcismCard{
     flex-direction: column;
     align-items: center;
-    padding: 3%;
   }
 
   .exorcismCard:nth-child(3){
     flex-direction: column-reverse;
   }
   
-  .exorcismImg, .exorcismSentence{
+  .exorcismImg, .exorcismText{
     width: 100%;
   }
 
