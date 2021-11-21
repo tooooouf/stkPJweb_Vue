@@ -4,6 +4,7 @@
     <Story/>
     <Exorcism/>
     <Character/>
+    <Symbol/>
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import Title from '@/components/game/title.vue'
 import Story from '@/components/game/story.vue'
 import Exorcism from '@/components/game/exorcism.vue'
 import Character from '@/components/game/character.vue'
+import Symbol from '@/components/game/symbol.vue'
 
 export default {
   components: {
     Title,
     Story,
     Exorcism,
-    Character
+    Character,
+    Symbol,
   }
 }
 </script>
@@ -38,6 +41,7 @@ img{
 .chapter{
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -48,6 +52,7 @@ img{
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   max-width: 900px;
   vertical-align:top;
@@ -55,7 +60,7 @@ img{
 
 .chapterTitle{
   max-width: 300px;
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 @media screen and (max-width: 768px){
