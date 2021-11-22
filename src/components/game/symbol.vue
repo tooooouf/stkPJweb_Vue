@@ -13,18 +13,20 @@
           <p>解説が入る</p>
         </div>
       </div>
-
+      <CardDeck/>
     </div>
     <Ult/>
   </section>
 </template>
 
 <script>
+import CardDeck from '@/components/game/cardDeck.vue'
 import Ult from '@/components/game/ult.vue'
 
 export default {
   components: {
-    Ult,
+    CardDeck,
+    Ult
   }
 }
 </script>
