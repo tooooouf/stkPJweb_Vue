@@ -55,6 +55,7 @@ img{
   box-sizing: border-box;
   width: 100%;
   max-width: 900px;
+  margin-bottom: 50px;
   vertical-align:top;
 }
 

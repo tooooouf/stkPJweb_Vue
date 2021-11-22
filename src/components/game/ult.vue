@@ -26,7 +26,7 @@
 <style scoped>
 #ult{
   display: flex;
-  max-height: unset;
+  min-height: initial;
 }
 
 .ultBg{
@@ -62,7 +62,7 @@
 
 .ultCard::after{
   position: absolute;
-  bottom: -5em;
+  bottom: -50px;
   display: inline-block;
   background: url(../../assets/gamepage/シンボル/universe.png) center center no-repeat;
   background-size: contain;
