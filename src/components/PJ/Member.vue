@@ -33,7 +33,7 @@ export default {
                     isRepresentative: true,
                     memberProgram: 'CD',
                     memberName: 'ほかぞの',
-                    memberRole: 'motioner'
+                    memberRole: 'motioner, att.creator'
                 },
                 {
                     id: 2,
@@ -60,7 +60,7 @@ export default {
                     isRepresentative: false,
                     memberProgram: 'CD',
                     memberName: 'こにし',
-                    memberRole: 'planner, designer motioner'
+                    memberRole: 'planner, designer  att.creator'
                 },
                 {
                     id: 5,
@@ -69,7 +69,7 @@ export default {
                     isRepresentative: false,
                     memberProgram: 'PC',
                     memberName: 'ほりえ',
-                    memberRole: 'RCprogrammer'
+                    memberRole: 'RCprogrammer systemEngineer'
                 },
                 {
                     id: 6,
@@ -78,7 +78,7 @@ export default {
                     isRepresentative: false,
                     memberProgram: 'PC',
                     memberName: 'ふじの',
-                    memberRole: 'WEBprogrammer'
+                    memberRole: 'WEBprogrammer effector'
                 },
                 {
                     id: 7,
