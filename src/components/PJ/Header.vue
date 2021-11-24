@@ -2,15 +2,15 @@
     <header class="PJheader">
         <div class="headercontent">
             <div class="headericon">
-                <a href="#top"></a>
+                <a href="#" v-scroll-to="'#top'"></a>
                 <img src="@/assets/imgs/佐竹プロジェクトロゴver1.png" alt="">
             </div>
             <div class="desktopnav">
-                <a href="#top">top</a>
-                <a href="#about">about</a>
-                <a href="#game">game</a>
-                <a href="#member">member</a>
-                <a href="#activity">activity</a>
+                <a v-scroll-to="'#top'">top</a>
+                <a v-scroll-to="'#about'">about</a>
+                <a v-scroll-to="'#game'">game</a>
+                <a v-scroll-to="'#member'">member</a>
+                <a v-scroll-to="'#activity'">activity</a>
             </div>
         </div>
     </header>

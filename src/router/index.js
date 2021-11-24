@@ -18,7 +18,7 @@ const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
     routes,
     scrollBehavior() {
-        return { top: 0, behavior: 'auto' }
+        return { top: 0 }
     },
 })
 
