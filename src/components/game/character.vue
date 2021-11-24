@@ -135,10 +135,10 @@
 
   .characterBg{
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     box-sizing: border-box;
     height: 100%;
-    padding-top: 25vh;
+    padding-top: 20vh;
   }
 
   .badness:nth-child(3){
