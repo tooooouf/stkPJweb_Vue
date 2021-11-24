@@ -53,6 +53,7 @@ export default {
 .symbolExp{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .symbolPic, .symbolText{
@@ -72,7 +73,11 @@ export default {
     flex-direction: column;
   }
   
-  .symbolPic, .symbolText{
+  .symbolPic{
+    width: 90%;
+  }
+
+  .symbolText{
     width: 100%;
   }
 }

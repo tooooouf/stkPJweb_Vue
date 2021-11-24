@@ -36,6 +36,7 @@ img{
   display: flex;
   flex-direction: column;
   font-family: Source Han Sans, sans-serif;
+  line-height: 2;
 }
 
 .chapter{

@@ -6,7 +6,8 @@
     <div class="chapterWrap">
       <div class="ultWrap">
         <div class="ultMoji">
-          <img src="@/assets/gamepage/シンボル/必殺技.png" alt="">
+          <img src="@/assets/gamepage/シンボル/必殺技.png" alt="" class="v-ult">
+          <img src="@/assets/gamepage/シンボル/必殺技横.png" alt="" class="h-ult">
         </div>
 
         <div class="ultCard">
@@ -14,7 +15,9 @@
         </div>
 
         <div class="ultText">
-          <p>解説が入る</p>
+          <p>連続でリズムを刻むことで、必殺技が溜まる<br>使用すると周囲は
+          <ruby><rb>宇宙</rb><rp>(</rp><rt>そら</rt><rp>)</rp></ruby>
+          に飲まれ、辺りの悪霊は一瞬にして灰になる</p>
         </div>
       </div>
       
@@ -27,11 +30,15 @@
 #ult{
   display: flex;
   min-height: initial;
+  overflow: hidden;
 }
 
 .ultBg{
   position: absolute;
+  display: flex;
+  align-items: center;
   width: 100%;
+  max-width: 1280px;
   z-index: 0;
 }
 
@@ -51,13 +58,24 @@
   padding: 5%;
 }
 
+.h-ult{
+  display: none;
+}
+
 .ultCard{
   position: relative;
   height: 90%;
 }
 
 .ultText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+.ultText p{
+  max-width: 200px;
 }
 
 .ultCard::after{
@@ -71,14 +89,40 @@
   height: 7em;
 }
 
-.ultIcon{
-  width: 50%;
-}
-
-
 @media screen and (max-width: 900px){
   .ultWrap{
     flex-direction: column;
   }
+
+  .ultBg{
+    width: 500vw;
+  }
+
+  .ultMoji, .ultText{
+    width: 100%;
+  }
+
+  .ultMoji{
+    max-width: 250px;
+    padding: 0;
+  }
+
+  .v-ult{
+    display: none;
+  }
+
+  .h-ult{
+    display: block;
+  }
+
+  .ultCard{
+    width: 90%;
+  }
+  
+  .ultCard::after{
+    bottom: -20px;
+    height: 5em;
+  }
+
 }
 </style>
