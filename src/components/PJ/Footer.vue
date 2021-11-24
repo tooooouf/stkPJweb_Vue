@@ -10,6 +10,7 @@
 <style>
 footer {
     position: relative;
+    width: 100%;
     height: max-content;
     bottom: 0;
     box-shadow: #8f8f8f -1px -1px 10px;

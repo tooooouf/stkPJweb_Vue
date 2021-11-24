@@ -68,7 +68,7 @@
         justify-content: space-evenly;
     }
     .aboutbgImg{
-        width: 70%;
+        width: 50%;
     }
 }
 

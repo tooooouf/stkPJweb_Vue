@@ -46,6 +46,7 @@
     flex-direction: row;
     align-items: center;
     box-sizing: border-box;
+    max-width: 100px;
     height: 100%;
     padding: 10px;
 }
@@ -57,6 +58,7 @@
 }
 
 .headericon img {
+    width: unset;
     height: 100%;
 }
 
@@ -70,6 +72,7 @@
     color: #4B4B4B;
     font-size: 20px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .desktopnav a::after{
