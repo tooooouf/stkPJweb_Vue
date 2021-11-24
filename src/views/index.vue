@@ -1,14 +1,14 @@
 <template>
-  <Header/>
     <div class="boxcolumn">
+      <Header/>
       <Top/>
       <About/>
       <Game/>   
       <Member/>
       <Activity/>
       <Comingsoon/>
+      <Footer/>
     </div>
-  <Footer/>
 </template>
 
 <script>
