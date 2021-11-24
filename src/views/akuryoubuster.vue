@@ -5,6 +5,7 @@
     <Exorcism/>
     <Character/>
     <Symbol/>
+    <FooterGame/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Story from '@/components/game/story.vue'
 import Exorcism from '@/components/game/exorcism.vue'
 import Character from '@/components/game/character.vue'
 import Symbol from '@/components/game/symbol.vue'
+import FooterGame from '@/components/game/footer_game.vue'
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     Exorcism,
     Character,
     Symbol,
+    FooterGame
   }
 }
 </script>
