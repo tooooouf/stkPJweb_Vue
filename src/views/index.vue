@@ -66,7 +66,7 @@ function scrollanimation(){
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 .boxcolumn {
@@ -74,7 +74,7 @@ function scrollanimation(){
     flex-direction: column;
     align-items: center;
     width: 100%;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'GenJyuuGothic', sans-serif;
 }
 
 section {
