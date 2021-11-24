@@ -34,7 +34,7 @@ export default {
 <style scoped>
 #symbol{
   position: relative;
-  background: url(../../assets/gamepage/シンボル/シンボル四角背景.png);
+  background: url(~@/assets/gamepage/シンボル/シンボル四角背景.png);
   color: #ffffff;
 }
 
@@ -45,7 +45,7 @@ export default {
   height: 0;
   padding-bottom: 50px;
   height: auto;
-  background: url(../../assets/gamepage/シンボル/シンボルギザギザ部分.png) center top repeat-x;
+  background: url(~@/assets/gamepage/シンボル/シンボルギザギザ部分.png) center top repeat-x;
   background-size: auto 100%;
   content: "";
 }

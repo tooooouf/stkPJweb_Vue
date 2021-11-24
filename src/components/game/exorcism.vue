@@ -30,7 +30,7 @@
 <style scoped>
 #exorcism{
   position: relative;
-  background: url(../../assets/gamepage/悪霊退散/悪霊退散四角背景.png) top center / cover no-repeat;
+  background: url(~@/assets/gamepage/悪霊退散/悪霊退散四角背景.png) top center / cover no-repeat;
   color: #ffffff;
 }
 
@@ -41,7 +41,7 @@
   height: 0;
   padding-bottom: 50px;
   height: auto;
-  background: url(../../assets/gamepage/悪霊退散/悪霊退散ギザギザ部分.png) center top repeat-x;
+  background: url(~@/assets/gamepage/悪霊退散/悪霊退散ギザギザ部分.png) center top repeat-x;
   background-size: auto 100%;
   content: "";
 }

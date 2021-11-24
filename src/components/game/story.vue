@@ -35,7 +35,7 @@
 <style scoped>
 #story {
   width: 100%;
-  background: url(../../assets/gamepage/物語/物語背景_2.png) top center / cover no-repeat;
+  background: url(~@/assets/gamepage/物語/物語背景_2.png) top center / cover no-repeat;
 }
 
 .storyCard{

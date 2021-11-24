@@ -58,7 +58,7 @@
   height: 0;
   padding-bottom: 50px;
   height: auto;
-  background: url(../../assets/gamepage/キャラクター/キャラクターギザギザ部分.png) center top repeat-x;
+  background: url(~@/assets/gamepage/キャラクター/キャラクターギザギザ部分.png) center top repeat-x;
   background-size: auto 100%;
   content: "";
 }
@@ -80,7 +80,7 @@
   max-width: 70px;
   height: 100%;
   content: "";
-  background: url(../../assets/gamepage/キャラクター/anotherGhost.png) center center / cover no-repeat;
+  background: url(~@/assets/gamepage/キャラクター/anotherGhost.png) center center / cover no-repeat;
   background-size: 100% auto;
 }
 
