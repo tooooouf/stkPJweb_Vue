@@ -35,7 +35,7 @@ img{
 .gameWrapper{
   display: flex;
   flex-direction: column;
-
+  font-family: Source Han Sans, sans-serif;
 }
 
 .chapter{
