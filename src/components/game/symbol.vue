@@ -1,10 +1,17 @@
 <template>
   <section class="chapter" id="symbol">
     <div class="chapterWrap">
-      <div cardBg></div>
       <div class="chapterTitle">
         <img src="@/assets/gamepage/シンボル/シンボル.png" alt="">
       </div>
+      <span class="cardBg">
+        <div class="symbolbgImg">
+          <img src="@/assets/gamepage/シンボル/シンボル悪霊退散.png" alt="">
+        </div>
+        <div class="symbolbgImg">
+          <img src="@/assets/gamepage/シンボル/シンボル悪霊退散.png" alt="">
+        </div>
+      </span>
       <div class="symbolExp">
         <div class="symbolPic">
           <img src="@/assets/gamepage/シンボル/星カード.png" alt="">
@@ -50,10 +57,25 @@ export default {
   content: "";
 }
 
+.cardBg{
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  
+  z-index: 0;
+}
+
+.symbolbgImg{
+  width: 15vw;
+}
+
 .symbolExp{
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 100;
 }
 
 .symbolPic, .symbolText{
@@ -69,6 +91,17 @@ export default {
 
 
 @media screen and (max-width: 768px){
+  .cardBg{
+    top: 150px;
+  }
+  
+  .symbolbgImg{
+    width: 50vw;
+  }
+  .symbolbgImg:nth-child(2){
+    display: none;
+  }
+  
   .symbolExp{
     flex-direction: column;
   }
