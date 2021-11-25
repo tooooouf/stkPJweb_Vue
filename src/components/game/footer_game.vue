@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 25vh;
+  height: 30vh;
   background: url(~@/assets/gamepage/フッター/フッター背景.png) top center no-repeat;
   color: #FFFFFF;
   text-align: center;
