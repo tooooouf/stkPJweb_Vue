@@ -16,7 +16,7 @@
 
         <div class="ultText">
           <p>連続でリズムを刻むことで、必殺技が溜まる<br>使用すると周囲は
-          <ruby><rb>宇宙</rb><rp>(</rp><rt>そら</rt><rp>)</rp></ruby>
+          <ruby>宇宙<rp>(</rp><rt>そら</rt><rp>)</rp></ruby>
           に飲まれ、辺りの悪霊は一瞬にして灰になる</p>
         </div>
       </div>
