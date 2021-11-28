@@ -112,7 +112,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 900px;
+    max-width: 1280px;
     padding: 0 5% 0 5%;
     opacity: 0;
     overflow: hidden;
@@ -132,8 +132,8 @@ section {
 }
 
 .sentence{
+    max-width: 800px;
     margin-bottom: 50px;
-    max-width: 600px;
     line-height: 2.5;
 }
 
