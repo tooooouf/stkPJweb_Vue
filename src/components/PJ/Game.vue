@@ -21,6 +21,14 @@
                 <p>ゲーム専用サイトへGO！</p>
                 <span></span>
             </div>
+            <div class="gameMovie">
+                <h2>悪霊ばすたー紹介動画</h2>
+                <div class="gameMovie_flame">
+                    <!--<video src=""></video>-->
+                    <img src="@/assets/gamepage/悪霊退散/動画予定場所1.png" alt="">
+                </div>
+            </div>
+            <span class="dividingLine"></span>
         </div>
     </section> 
 </template>
@@ -134,6 +142,47 @@ export default ({
     text-shadow: #4DB4C4 3px 3px;
 }
 
+.gameMovie{
+    text-align: center;
+}
+
+.gameMovie_flame{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 700px;
+    border: #73239E solid 5px;
+    padding: 1%;
+    z-index: -1;
+}
+
+.gameMovie_flame::before, .gameMovie_flame::after{
+    content:'';
+    position: absolute;
+    display: block;
+    background-color: #67AEFE;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.gameMovie_flame::before{
+    top: -5px;
+    bottom: -5px;
+    left: 30px;
+    right: 30px;
+}
+
+.gameMovie_flame::after{
+    top: 30px;
+    bottom: 30px;
+    left: -5px;
+    right: -5px;
+}
+
+.gameMovie img{
+    z-index: 10;
+}
+
 .readmore{
     position: relative;
     display: flex;
@@ -143,6 +192,7 @@ export default ({
     width: max-content;
     background-color: #ffffff;
     border-radius: 50px;
+    margin-bottom: 50px;
     padding: 10px 20px 10px 20px;
     color: #4B4B4B;
     line-height: 1;
@@ -160,8 +210,8 @@ export default ({
 
 .readmore span{
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     margin-left: 10px;
     background-color: #4EA1FF;
@@ -169,12 +219,13 @@ export default ({
 .readmore span::before{
     content: "";
     position: absolute;
-    top: 6px;
-    left: 4px;
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    top: 9px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    border-radius: 2px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
