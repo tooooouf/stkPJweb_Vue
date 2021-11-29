@@ -137,6 +137,18 @@ section {
     line-height: 2.5;
 }
 
+.underline{
+  background: linear-gradient(transparent 70%, #ffff0080 70%);
+}
+
+.dividingLine{
+  border: #ffffff solid 3px;
+  border-radius: 5px;
+  margin: 50px 0 50px 0;
+  width: 100%;
+  max-width: 900px;
+}
+
 @keyframes fadein{
   0%{
     transform: translateY(50px);
