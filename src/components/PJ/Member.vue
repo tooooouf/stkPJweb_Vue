@@ -195,6 +195,7 @@ export default {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 10px;
 }
 
 .representative{
@@ -212,6 +213,10 @@ export default {
 
 .program{
     font-size: 10px;
+}
+
+.membername{
+    font-size: 1.1em;
 }
 
 .memberrole{
