@@ -29,6 +29,7 @@
                 </div>
             </div>
             <span class="dividingLine"></span>
+            <GameSupplement/>
         </div>
     </section> 
 </template>
@@ -36,10 +37,15 @@
 <script>
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import GameSupplement from '@/components/PJ/GameSupplement.vue'
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default ({
+    components:{
+        GameSupplement
+    },
+
     mounted(){
         this.titleimg();
         this.portrait();
