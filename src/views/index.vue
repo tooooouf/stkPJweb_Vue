@@ -142,10 +142,11 @@ section {
 }
 
 .dividingLine{
-  border: #ffffff solid 3px;
-  border-radius: 5px;
+  border-top: #ffffff solid 5px;
+  border-radius: 3px;
   margin: 50px 0 50px 0;
   width: 100%;
+  height: 0;
   max-width: 900px;
 }
 
