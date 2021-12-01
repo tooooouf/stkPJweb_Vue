@@ -1,6 +1,6 @@
 <template>
   <div class="cardDeck">
-    <carousel :settings="settings" :breakpoints="breakpoints" :wrapAround= "true" :autoplay="5000">
+    <carousel :settings="settings" :breakpoints="breakpoints">
       <slide v-for="(card,key) in cards" :key="key">
         <img :src="card.url" alt="">
       </slide>
@@ -26,7 +26,9 @@ export default defineComponent({
     settings:{
       itemsToShow: 4,
       itemsToScroll: 1,
-      snapAlign: 'start'
+      wrapAround: 'true',
+      snapAlign: 'start',
+      autoplay: 1000,
     },
     breakpoints:{
       0:{
@@ -44,25 +46,103 @@ export default defineComponent({
     return{
       cards: [
         {
-          url: require('@/assets/gamepage/シンボル/炎カード.png')
+          url: require('@/assets/gamepage/シンボル/cards/Card1.png')
         },
         {
-          url: require('@/assets/gamepage/シンボル/風カード１.png')
+          url: require('@/assets/gamepage/シンボル/cards/Card2.png')
         },
         {
-          url: require('@/assets/gamepage/シンボル/雷カード.png')
+          url: require('@/assets/gamepage/シンボル/cards/Card2_1.png')
         },
         {
-          url: require('@/assets/gamepage/シンボル/風カード２.png')
+          url: require('@/assets/gamepage/シンボル/cards/Card3_0.png')
         },
         {
-          url: require('@/assets/gamepage/シンボル/炎カード.png')
+          url: require('@/assets/gamepage/シンボル/cards/Card3_1.png')
         },
         {
-          url: require('@/assets/gamepage/シンボル/炎カード.png')
+          url: require('@/assets/gamepage/シンボル/cards/Card3_2.png')
         },
         {
-          url: require('@/assets/gamepage/シンボル/炎カード.png')
+          url: require('@/assets/gamepage/シンボル/cards/Card3_3.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card4_0.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card4_1.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card4_2.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card4_3.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card4_4.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card4_5.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card4_6.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card5_0.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card5_1.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card5_2.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card5_3.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card5_4.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card5_5.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card5_6.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card6_0.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card6_1.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card6_2.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card6_3.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card6_4.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card7_1.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card7_2.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card7_3.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card8_1.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card8_2.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card9_0.png')
+        },
+        {
+          url: require('@/assets/gamepage/シンボル/cards/Card14_0.png')
         },
       ]
     }
@@ -74,15 +154,18 @@ export default defineComponent({
 
 <style scoped>
 .cardDeck{
-  width: 90%;
+  width: 100%;
 }
 
 </style>
 
 <style>
+
 .carousel__prev, .carousel__next{
+  width: 50px;
+  height: 50px;
   background-color: unset;
-  font-size: calc(var(--vc-nav-width));
+  font-size: 50em;
 }
 
 </style>
