@@ -27,7 +27,7 @@
     top: 0;
     left: 0;
     border-top: solid 5px #738838;
-    z-index: 999;
+    z-index: 900;
 }
 
 .headercontent {
