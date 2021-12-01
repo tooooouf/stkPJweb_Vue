@@ -5,7 +5,7 @@
             <h1 class="sectiontitle">game</h1>
             <div class="gameimgwrap">
                 <div class="gameimg titleimg">
-                    <img src="@/assets/imgs/game/title.jpg" alt="">
+                    <img src="@/assets/gamepage/タイトル/タイトル画面_文字無し.jpg" alt="">
                 </div>
                 <div class="gameimg portrait">
                     <img src="@/assets/imgs/game/portrait.png" alt="">
@@ -113,7 +113,7 @@ export default ({
     position: relative;
     display: flex;
     max-width: 100%;
-    min-height: 100%;
+    min-height: 100%;    
 }
 
 .gameimg img{
@@ -125,6 +125,11 @@ export default ({
     align-items: center;
     left: -700px;
     width: 100%;
+    
+}
+
+.titleimg img{
+    box-shadow: #4B4B4B 5px 5px;
 }
 
 .portrait{
