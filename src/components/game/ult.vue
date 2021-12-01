@@ -31,6 +31,11 @@
   display: flex;
   min-height: initial;
   overflow: hidden;
+  z-index: 6;
+}
+
+#ult::after{
+  background-image: none;
 }
 
 .ultBg{
@@ -39,7 +44,7 @@
   align-items: center;
   width: 100%;
   max-width: 1280px;
-  z-index: 0;
+  z-index: 5;
 }
 
 .ultWrap{

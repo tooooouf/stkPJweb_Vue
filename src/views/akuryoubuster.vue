@@ -40,6 +40,7 @@ img{
   flex-direction: column;
   font-family: Source Han Sans, sans-serif;
   line-height: 2;
+  overflow: hidden;
 }
 
 .chapter{
@@ -52,6 +53,19 @@ img{
   min-height: 100vh;
 }
 
+.chapter::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url(~@/assets/imgs/background/和紙.jpg);
+  opacity: 0.1;
+}
+
 .chapterWrap{
   display: flex;
   flex-direction: column;
@@ -61,6 +75,7 @@ img{
   max-width: 900px;
   margin-bottom: 50px;
   vertical-align:top;
+  z-index: 5;
 }
 
 .chapterTitle{

@@ -64,7 +64,7 @@ export default {
   justify-content: space-evenly;
   width: 100%;
   
-  z-index: 0;
+  z-index: 10;
 }
 
 .symbolbgImg{

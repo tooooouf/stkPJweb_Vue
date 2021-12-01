@@ -29,6 +29,7 @@ export default defineComponent({
       wrapAround: 'true',
       snapAlign: 'start',
       autoplay: 1000,
+      pauseAutoplayOnHover: 'true',
     },
     breakpoints:{
       0:{
@@ -155,11 +156,15 @@ export default defineComponent({
 <style scoped>
 .cardDeck{
   width: 100%;
+  z-index: 10;
 }
 
 </style>
 
 <style>
+.carousel__icon{
+  height: 100%;
+}
 
 .carousel__prev, .carousel__next{
   width: 50px;
