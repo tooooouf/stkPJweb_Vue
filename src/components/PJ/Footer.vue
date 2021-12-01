@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="footcontent">
-            <p>stkPJweb v2.1 α</p>
+            <p>stkPJweb v3.0</p>
             <small>&copy; 2021 佐竹プロジェクト All rights reserved</small>
         </div>
     </footer>
@@ -20,6 +20,6 @@ footer {
 }
 
 .footcontent {
-    padding: 5px 0 5px 0;
+    padding: 10px 0 20px 0;
 }
 </style>
