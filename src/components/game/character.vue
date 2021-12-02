@@ -1,5 +1,6 @@
 <template>
   <section class="chapter" id="character">
+    <Bloom/>
     <div class="chapterWrap">
       <div class="chapterTitle">
         <img src="@/assets/gamepage/キャラクター/キャラクター.png" alt="">
@@ -45,10 +46,21 @@
   </section>
 </template>
 
+<script>
+import Bloom from '@/components/game/bloom.vue'
+
+export default {
+  components:{
+    Bloom,
+  }
+}
+</script>
+
 <style scoped>
 #character{
   position: relative;
   background: url(../../assets/gamepage/キャラクター/キャラクター四角背景.png) top center / cover no-repeat;
+  z-index: 4;
 }
 
 #character::before{

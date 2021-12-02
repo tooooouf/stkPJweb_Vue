@@ -32,6 +32,7 @@
   position: relative;
   background: url(~@/assets/gamepage/悪霊退散/悪霊退散四角背景.png) top center / cover no-repeat;
   color: #ffffff;
+  z-index: 3;
 }
 
 #exorcism::before{
@@ -60,6 +61,25 @@
   padding: 10px;
 }
 
+.exorcismImg::before{
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 100%;
+}
+
+.exorcismImg:nth-child(1)::before{
+  top: -10px;
+  right: -5px;
+  background: url(~@/assets/gamepage/悪霊退散/exorcismLabel.png) top center / contain no-repeat;
+}
+
+.exorcismImg:nth-child(2)::before{
+  top: -20px;
+  left: -5px;
+  background: url(~@/assets/gamepage/悪霊退散/guardLabel.png) top center / contain no-repeat;
+}
+
 .exorcismOverlay{
   position: absolute;
 }
@@ -81,6 +101,14 @@
   
   .exorcismImg, .exorcismText{
     width: 100%;
+  }
+
+  .exorcismImg:nth-child(1)::before{
+    right: 0;
+  }
+
+  .exorcismImg:nth-child(2)::before{
+    left: 0;
   }
 
   .exorcismOverlay {

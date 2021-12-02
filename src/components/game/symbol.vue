@@ -43,6 +43,7 @@ export default {
   position: relative;
   background: url(~@/assets/gamepage/シンボル/シンボル四角背景.png);
   color: #ffffff;
+  z-index: 5;
 }
 
 #symbol::before{

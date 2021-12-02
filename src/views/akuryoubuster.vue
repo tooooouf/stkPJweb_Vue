@@ -56,7 +56,7 @@ img{
 .chapter::after{
   content: "";
   position: absolute;
-  top: 0;
+  top: -50px;
   left: 0;
   display: inline-block;
   width: 100%;
@@ -64,6 +64,15 @@ img{
   z-index: 1;
   background-image: url(~@/assets/imgs/background/和紙.jpg);
   opacity: 0.1;
+}
+
+#story::after{
+  top: 0;
+  height: calc(100% - 50px);
+}
+
+#symbol::after{
+  height: calc(100% + 50px);
 }
 
 .chapterWrap{

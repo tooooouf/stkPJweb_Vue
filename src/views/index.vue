@@ -132,7 +132,7 @@ section {
 }
 
 .sentence{
-    max-width: 800px;
+    max-width: 700px;
     margin-bottom: 50px;
     line-height: 3;
 }

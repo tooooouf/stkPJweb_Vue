@@ -1,5 +1,6 @@
 <template>
   <section class="chapter" id="story">
+    <Bloom/>
     <div class="chapterWrap">
       <div class="chapterTitle">
         <img src="@/assets/gamepage/物語/物語.png" alt="">
@@ -31,6 +32,16 @@
     </div>
   </section>
 </template>
+
+<script>
+import Bloom from '@/components/game/bloom.vue'
+
+export default {
+  components:{
+    Bloom,
+  }
+}
+</script>
 
 <style scoped>
 #story {
