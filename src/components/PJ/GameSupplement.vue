@@ -258,6 +258,17 @@ export default{
   min-width: 200px;
 }
 
+@media screen and (max-width: 900px) {
+  .why::before ,.howdid::before{
+    width: 15%;
+    left: 0%;
+  }
+
+  .why::before{
+    top: -30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .modalCard{
     flex-direction: column;
@@ -287,13 +298,14 @@ export default{
   }
   
   .why::before ,.howdid::before{
-    width: 50px;
-    left: -5%;
+    width: 70px;
+    top: -25px;
   }
 
-  .why::before{
-    top: -15%;
+  .howdid::before{
+    top: 20px
   }
 }
+
 
 </style>
