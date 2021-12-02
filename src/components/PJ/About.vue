@@ -127,7 +127,7 @@
     margin: 10px;
     padding: 20px;
     text-align: center;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .QAlink{
@@ -136,7 +136,7 @@
     color: #ffffff;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     .aboutQA{
         flex-direction: column;
         align-items: center;
@@ -154,7 +154,7 @@
         justify-content: space-evenly;
     }
     .aboutbgImg{
-        width: 50%;
+        width: 70%;
     }
     
     .QAbox{
