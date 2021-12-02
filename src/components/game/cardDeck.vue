@@ -1,7 +1,7 @@
 <template>
   <div class="cardDeck">
     <carousel :settings="settings" :breakpoints="breakpoints">
-      <slide v-for="(card,key) in cards" :key="key">
+      <slide v-for="(card,cardKey) in cards" :key="cardKey">
         <img :src="card.url" alt="">
       </slide>
       <template #addons>
