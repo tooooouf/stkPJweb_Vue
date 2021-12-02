@@ -134,7 +134,7 @@ section {
 .sentence{
     max-width: 800px;
     margin-bottom: 50px;
-    line-height: 2.5;
+    line-height: 3;
 }
 
 .underline{
