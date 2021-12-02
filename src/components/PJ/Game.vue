@@ -177,8 +177,8 @@ export default ({
 }
 
 .gameMovie_flame::before{
-    top: -5px;
-    bottom: -5px;
+    top: -10px;
+    bottom: -10px;
     left: 30px;
     right: 30px;
 }
@@ -186,8 +186,8 @@ export default ({
 .gameMovie_flame::after{
     top: 30px;
     bottom: 30px;
-    left: -5px;
-    right: -5px;
+    left: -10px;
+    right: -10px;
 }
 
 .gameMovie img{
@@ -199,7 +199,7 @@ export default ({
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: max-content;
     background-color: #ffffff;
     border-radius: 50px;
@@ -207,6 +207,7 @@ export default ({
     padding: 10px 20px 10px 20px;
     color: #4B4B4B;
     line-height: 1;
+    cursor: pointer;
 }
 
 .readmore a{
