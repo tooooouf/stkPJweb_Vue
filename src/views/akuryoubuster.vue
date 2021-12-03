@@ -1,13 +1,7 @@
 <template>
   <Head>
     <title>悪霊ばすたー</title>
-    <link rel="shortcut icon" href="./icons/game.ico" type="image/x-icon">
-    <meta property="og:url" content="https://www.ne.senshu-u.ac.jp/~proj2021-16/akuryoubuster">
-    <meta property="og:title" content="悪霊ばすたー">
-    <meta property="og:description" content="悪霊ばすたーの公式サイトです">
-    <meta property="og:sitename" content="悪霊ばすたー">
-    <meta property="og:image" content="https://www.ne.senshu-u.ac.jp/~proj2021-16/img/タイトル画面_文字無し.4d75e806.jpg">
-    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="shortcut icon" href="../icons/game.ico" type="image/x-icon">
   </Head>
   <div class="gameWrapper">
     <Title/>
