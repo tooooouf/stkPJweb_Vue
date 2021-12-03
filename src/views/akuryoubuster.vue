@@ -1,12 +1,13 @@
 <template>
-  <!--<Head>
+  <Head>
     <title>悪霊ばすたー</title>
+    <link rel="shortcut icon" href="<%= BASE_URL %>icons/game.ico" type="image/x-icon">
     <meta property="og:url" content="https://www.ne.senshu-u.ac.jp/~proj2021-16/akuryoubuster">
     <meta property="og:title" content="悪霊ばすたー">
     <meta property="og:description" content="悪霊ばすたーの公式サイトです">
     <meta property="og:sitename" content="悪霊ばすたー">
     <meta property="og:image" content="https://www.ne.senshu-u.ac.jp/~proj2021-16/img/タイトル画面_文字無し.4d75e806.jpg">
-  </Head>-->
+  </Head>
   <div class="gameWrapper">
     <Title/>
     <Story/>
@@ -18,7 +19,7 @@
 </template>
 
 <script>
-//import { Head } from '@egoist/vue-head'
+import { Head } from '@egoist/vue-head'
 import Title from '@/components/game/title.vue'
 import Story from '@/components/game/story.vue'
 import Exorcism from '@/components/game/exorcism.vue'
@@ -28,7 +29,7 @@ import FooterGame from '@/components/game/footer_game.vue'
 
 export default {
   components: {
-    //Head,
+    Head,
     Title,
     Story,
     Exorcism,
