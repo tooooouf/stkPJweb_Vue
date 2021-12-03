@@ -1,7 +1,7 @@
 <template>
   <Head>
     <title>悪霊ばすたー</title>
-    <link rel="shortcut icon" href="<%= BASE_URL %>icons/game.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./icons/game.ico" type="image/x-icon">
     <meta property="og:url" content="https://www.ne.senshu-u.ac.jp/~proj2021-16/akuryoubuster">
     <meta property="og:title" content="悪霊ばすたー">
     <meta property="og:description" content="悪霊ばすたーの公式サイトです">
