@@ -1,4 +1,12 @@
 <template>
+    <!--<Head>
+        <title>佐竹プロジェクト2021</title>
+        <meta property="og:url" content="https://www.ne.senshu-u.ac.jp/~proj2021-16">
+        <meta property="og:title" content="佐竹プロジェクト2021">
+        <meta property="og:description" content="専修大学 ネットワーク情報学部 ネットワーク情報学科 2021年度 佐竹プロジェクトの公式サイトです">
+        <meta property="og:sitename" content="佐竹プロジェクト2021">
+        <meta property="og:image" content="https://www.ne.senshu-u.ac.jp/~proj2021-16/img/佐竹プロジェクトロゴver1.042a5182.png">
+    </Head>-->
     <div class="boxcolumn">
       <Header/>
       <Top/>
@@ -12,6 +20,7 @@
 </template>
 
 <script>
+//import { Head } from '@egoist/vue-head'
 import Header from '@/components/PJ/Header.vue'
 import Top from '@/components/PJ/Top.vue'
 import About from '@/components/PJ/About.vue'
@@ -25,6 +34,7 @@ import jQuery from 'jquery'
 export default {
   name: 'App',
   components: {
+    //Head,
     Header,
     Top,
     About,
@@ -33,7 +43,7 @@ export default {
     Activity,
     Comingsoon,
     Footer
-  }
+  },
 }
 
 'use strict';

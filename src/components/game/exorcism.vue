@@ -37,7 +37,7 @@
 
 #exorcism::before{
   position: absolute;
-  top: -48px;
+  top: -45px;
   width: 100%;
   height: 0;
   padding-bottom: 50px;
