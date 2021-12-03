@@ -1,11 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Index from '@/views/index.vue'
 import Akuryoubuster from '@/views/akuryoubuster.vue'
 
-const routes = [{
+const routes = [
+    {
         path: '/',
         name: 'index',
-        component: Index
+        component: Index,
     },
     {
         path: '/akuryoubuster',
@@ -15,7 +16,8 @@ const routes = [{
 ]
 
 const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
+    history: createWebHashHistory(),
+    base: /~proj2021-16/,
     routes,
     scrollBehavior() {
         return { top: 0 }
