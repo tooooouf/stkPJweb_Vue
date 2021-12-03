@@ -9,6 +9,7 @@
     "dev": "vue-cli-service serve --mode development"
   },
   "dependencies": {
+    "@egoist/vue-head": "^0.1.8",
     "core-js": "^3.6.5",
     "gsap": "^3.6.1",
     "jquery": "^3.6.0",

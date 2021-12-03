@@ -15,7 +15,7 @@
       </a>
     </nav>
     <div class="pjLink">
-      <router-link to="/"/>
+      <router-link to="/" target="_blank" ref="noreferrer noopener"/>
       <img src="@/assets/gamepage/フッター/PJボタン.png" alt="">
     </div>
     <small>&copy; 2021 佐竹プロジェクト All rights reserved</small>
