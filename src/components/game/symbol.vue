@@ -41,7 +41,7 @@ export default {
 <style scoped>
 #symbol{
   position: relative;
-  background: url(~@/assets/gamepage/シンボル/シンボル四角背景.png);
+  background: url(~@/assets/gamepage/シンボル/シンボル四角背景.png) top center / cover no-repeat;
   color: #ffffff;
   z-index: 5;
 }
@@ -60,16 +60,23 @@ export default {
 
 .cardBg{
   position: absolute;
-  top: 100px;
+  top: 200px;
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  
+  justify-content: space-between;
+  max-height: 700px;
   z-index: 10;
 }
 
 .symbolbgImg{
-  width: 15vw;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.symbolbgImg img{
+  margin: 0;
+  width: unset;
+  height: 100%;
 }
 
 .symbolExp{
@@ -93,12 +100,20 @@ export default {
 
 @media screen and (max-width: 768px){
   .cardBg{
+    top: 100px;
+    display: block;
     top: 150px;
   }
-  
+
   .symbolbgImg{
-    width: 50vw;
+    display: block;
+    width: 100%;
   }
+
+  .symbolbgImg img{
+    max-height: 900px;
+  }
+  
   .symbolbgImg:nth-child(2){
     display: none;
   }
