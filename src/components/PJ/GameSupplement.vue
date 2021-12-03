@@ -2,7 +2,7 @@
   <div class="gameSupplement">
     <div class="modalCard" @click="openController=true">
       <div class="modalCard_img">
-        <img src="@/assets/imgs/game/IMG_1045.jpg" alt="">
+        <img src="@/assets/imgs/game/DSCF0612.jpg" alt="">
       </div>
       <div class="modalCard_text">
         <h2>アタッチメント制作</h2>
