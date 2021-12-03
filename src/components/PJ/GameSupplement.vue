@@ -53,7 +53,7 @@
               </p>
               <div class="dividingLine"></div>
               <h3>完成品</h3>
-              <img src="@/assets/gamepage/悪霊退散/動画予定場所1.png" alt="">
+              <img src="@/assets/imgs/game/DSCF0612.jpg" alt="">
               <p>
                 30cm程度の筒状であることにより、両手で持つことが必要になります。そうすることで振る際には腕だけでなく、肩や大胸筋も動かすことが可能に。
               </p>
