@@ -6,6 +6,7 @@
         <meta property="og:description" content="専修大学 ネットワーク情報学部 ネットワーク情報学科 2021年度 佐竹プロジェクトの公式サイトです">
         <meta property="og:sitename" content="佐竹プロジェクト2021">
         <meta property="og:image" content="https://www.ne.senshu-u.ac.jp/~proj2021-16/img/佐竹プロジェクトロゴver1.042a5182.png">
+        <meta name="twitter:card" content="summary" />
     </Head>
     <div class="boxcolumn">
       <Header/>
