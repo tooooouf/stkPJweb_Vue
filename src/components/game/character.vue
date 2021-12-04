@@ -147,6 +147,9 @@ export default {
 }
 
 @media screen and (max-width: 900px) {
+  #character{
+    background: url(../../assets/gamepage/キャラクター/キャラクター四角背景.png) top left / cover no-repeat;
+  }
   .characterList{
     flex-direction: column;
   }

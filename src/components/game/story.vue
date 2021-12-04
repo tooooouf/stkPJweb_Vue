@@ -92,6 +92,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  #story{
+    background: url(~@/assets/gamepage/物語/物語背景_2.png) top left / cover no-repeat;
+  }
+
   .storyCard{
     flex-direction: column-reverse;
     align-items: center;
