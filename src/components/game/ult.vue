@@ -15,9 +15,14 @@
         </div>
 
         <div class="ultText">
-          <p>連続でリズムを刻むことで、必殺技が溜まる<br>使用すると周囲は
-          <ruby>宇宙<rp>(</rp><rt>そら</rt><rp>)</rp></ruby>
-          に飲まれ、辺りの悪霊は一瞬にして灰になる</p>
+          <p>
+            連続でリズムを刻むことで、必殺技が溜まる
+          </p>
+          <p>
+            使用すると周囲は
+            <ruby>宇宙<rp>(</rp><rt>そら</rt><rp>)</rp></ruby>
+            に飲まれ、辺りの悪霊は一瞬にして無に帰す
+          </p>
         </div>
       </div>
       
@@ -41,8 +46,11 @@
 .ultBg{
   position: absolute;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   max-width: 1280px;
   z-index: 5;
 }
@@ -74,12 +82,14 @@
 
 .ultText{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 .ultText p{
+  margin: 5px 0;
   max-width: 200px;
 }
 
@@ -118,15 +128,17 @@
 
   .h-ult{
     display: block;
+    margin-bottom: 30px;
   }
 
   .ultCard{
     width: 90%;
+    margin-bottom: 30px;
   }
   
   .ultCard::after{
-    bottom: -20px;
-    height: 5em;
+    bottom: -30px;
+    height: 8em;
   }
 
 }

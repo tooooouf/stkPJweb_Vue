@@ -17,7 +17,14 @@
           <img src="@/assets/gamepage/シンボル/星カード.png" alt="">
         </div>
         <div class="symbolText">
-          <p>解説が入る</p>
+          <p>
+            主人公が使用する「シンボルカード」<br>
+            シンボルをなぞることで、攻撃を繰り出すことが可能となる。
+          </p>
+          <p>
+            シンボルは画数に応じて攻撃力、吹き飛ばし力が変化し<br>
+            「火・水・雷・風・土」の属性が付与されている。
+          </p>
         </div>
       </div>
       <CardDeck/>
@@ -83,6 +90,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 700px;
   z-index: 100;
 }
 
@@ -92,11 +100,13 @@ export default {
 
 .symbolText{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 350px;
+  padding: 0 30px;
+  text-align: center;
 }
-
-
 
 @media screen and (max-width: 768px){
   .cardBg{

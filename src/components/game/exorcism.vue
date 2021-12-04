@@ -12,12 +12,34 @@
           </div>
         </div>
         <div class="exorcismText">
-          <p>解説が入る</p>
+          <p>
+            タイミングよく筆を振ることでシンボルを描くことができる！<br>
+            たくさん描いて敵を攻撃しよう！
+          </p>
+          <p>
+            波が進むごとに曲のBPMや敵の出現頻度が変化するぞ！
+          </p>
+          <p>
+            敵を倒したり、波を突破したりすると経験値が獲得できる。<br>
+            経験値をためて新しいシンボルカードを獲得しよう！
+          </p>
         </div>
       </div>
       <div class="exorcismCard">
         <div class="exorcismText">
-          <p>解説が入る</p>
+          <p>
+            敵が飛ばしてくる泥球は<br>
+            防ぐことができる！
+          </p>
+          <p>
+            リズムに合わせて<br>
+            タイミングよくしゃがむことで<br>
+            バリアが展開される！
+          </p>
+          <p>
+            被弾を少なくすることが<br>
+            攻略のコツだ！
+          </p>
         </div>
         <div class="exorcismImg">
           <img src="@/assets/gamepage/悪霊退散/動画予定場所1.png" alt="">
@@ -51,6 +73,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
   margin-bottom: 100px;
 }
@@ -85,14 +108,18 @@
 }
 
 .exorcismText{
+  box-sizing: border-box;
   width: 40%;
-  padding: 10px;
+  max-width: 300px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 2;
 }
 
 @media screen and (max-width: 768px){
   .exorcismCard{
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 30px;
   }
 
   .exorcismCard:nth-child(3){
@@ -101,6 +128,10 @@
   
   .exorcismImg, .exorcismText{
     width: 100%;
+  }
+
+  .exorcismText{
+    margin: 0;
   }
 
   .exorcismImg:nth-child(1)::before{
