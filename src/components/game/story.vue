@@ -7,26 +7,41 @@
       </div>
       <div class="storyCard">
         <div class="storyText">
-        <p>あらすじが入る</p>
+        <p>
+          ある町に突如、<br>
+          見たこともない怪物が現れました。<br>
+          その怪物は人々を襲い、<br>
+          襲われた人を病気にしていきました。
+        </p>
       </div>
         <div class="storyImg">
-          <img src="@/assets/gamepage/物語/画像予定場所１.png" alt="">
-        </div>
-      </div>
-      <div class="storyCard">
-        <div class="storyImg">
-          <img src="@/assets/gamepage/物語/画像予定場所１.png" alt="">
-        </div>
-        <div class="storyText">
-        <p>あらすじが入る</p>
+          <img src="@/assets/gamepage/物語/IMG_1412.jpg" alt="">
         </div>
       </div>
       <div class="storyCard">
         <div class="storyImg">
-          <img src="@/assets/gamepage/物語/画像予定場所１.png" alt="">
+          <img src="@/assets/gamepage/物語/IMG_1415.jpg" alt="">
         </div>
         <div class="storyText">
-        <p>あらすじが入る</p>
+        <p>
+          伝達鳥から<br>
+          「町に怪物がでた」<br>
+          という情報を聴いた主人公は<br>
+          急いで町へ向かいました。
+        </p>
+        </div>
+      </div>
+      <div class="storyCard">
+        <div class="storyImg">
+          <img src="@/assets/gamepage/物語/IMG_1416.jpg" alt="">
+        </div>
+        <div class="storyText">
+        <p>
+          そこで待っていたのは、<br>
+          大量に湧き出る多種多様な怪物たち。<br>
+          果たして主人公は怪物たちを<br>
+          すべて倒すことができるのか⁉
+        </p>
         </div>
       </div>
     </div>
@@ -63,8 +78,12 @@ export default {
 }
 
 .storyText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   padding: 10px;
+  text-align: center;
 }
 
 .storyImg{
