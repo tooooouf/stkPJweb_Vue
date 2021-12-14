@@ -14,7 +14,7 @@
                 </div>
             </div>
             <h2 id="gametitle">悪霊ばすたー</h2>
-            <p class="sentence">ノリノリの音楽に合わせて、シンボルを描き、迫りくる悪霊を退治するリズムアクションゲーム。筆型のコントローラーを大きく振り回したり、敵の攻撃をしゃがんで避けたりとダイナミックな動きでゲームを楽しもう。エンドレス制を導入しているため、プレイヤーの体力orスキルの限界が来るまで終わらない！また、何度も繰り返し遊びたくなるように、様々なランダム要素を導入。ゲームにもっと詳しく知りたい方は専用webサイトへ！</p>
+            <p class="sentence">音楽に合わせて、シンボルを描き、迫りくる悪霊を退治するリズムアクションゲーム。筆型のコントローラーを大きく振り回したり、敵の攻撃をしゃがんで避けたりとダイナミックな動きでゲームを楽しもう。エンドレス制を導入しているため、プレイヤーの体力orスキルの限界が来るまで終わらない！また、何度も繰り返し遊びたくなるように、様々なランダム要素を導入。ゲームにもっと詳しく知りたい方は専用webサイトへ！</p>
             <div class="readmore">
                 <router-link to="/akuryoubuster" target="_blank" ref="noreferrer noopener"/>
                 <p>ゲーム専用サイトへGO！</p>
@@ -23,8 +23,7 @@
             <div class="gameMovie">
                 <h2>悪霊ばすたー紹介動画</h2>
                 <div class="gameMovie_flame">
-                    <!--<video src=""></video>-->
-                    <img src="@/assets/gamepage/悪霊退散/動画予定場所1.png" alt="">
+                    <video class="gameVideo" playsinline autoplay muted controls preload="none" poster="@/assets/gamepage/タイトル/タイトル画面_文字無し.jpg" src="@/assets/movie/悪霊ばすたープレイ動画.mp4"/>                   
                 </div>
             </div>
             <span class="dividingLine"></span>
@@ -163,7 +162,7 @@ export default ({
     max-width: 700px;
     border: #73239E solid 5px;
     padding: 1%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .gameMovie_flame::before, .gameMovie_flame::after{
@@ -187,10 +186,6 @@ export default ({
     bottom: 30px;
     left: -10px;
     right: -10px;
-}
-
-.gameMovie img{
-    z-index: 10;
 }
 
 .readmore{

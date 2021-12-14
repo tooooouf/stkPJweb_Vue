@@ -37,4 +37,10 @@ body {
     width: 100%;
     overflow: hidden;
 }
+
+video{
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
 </style>

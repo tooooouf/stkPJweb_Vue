@@ -6,7 +6,7 @@
       </div>
       <div class="exorcismCard">
         <div class="exorcismImg">
-          <img src="@/assets/gamepage/悪霊退散/動画予定場所1.png" alt="">
+          <video playsinline autoplay muted controls preload="none" loop poster="@/assets/gamepage/タイトル/タイトル画面_文字無し.jpg" src="@/assets/movie/悪霊ばすたープレイ動画.mp4"/>
           <div class="exorcismOverlay">
             <img src="" alt="">
           </div>
@@ -42,7 +42,7 @@
           </p>
         </div>
         <div class="exorcismImg">
-          <img src="@/assets/gamepage/悪霊退散/動画予定場所1.png" alt="">
+          <img src="@/assets/gamepage/悪霊退散/しゃがみ.png" alt="">
         </div>
       </div>
     </div>
@@ -87,19 +87,19 @@
 .exorcismImg::before{
   position: absolute;
   content: "";
-  width: 20%;
+  width: 15%;
   height: 100%;
 }
 
 .exorcismImg:nth-child(1)::before{
-  top: -10px;
-  right: -5px;
+  top: -50px;
+  left: -5px;
   background: url(~@/assets/gamepage/悪霊退散/exorcismLabel.png) top center / contain no-repeat;
 }
 
 .exorcismImg:nth-child(2)::before{
   top: -20px;
-  left: -5px;
+  right: 30%;
   background: url(~@/assets/gamepage/悪霊退散/guardLabel.png) top center / contain no-repeat;
 }
 
@@ -135,11 +135,11 @@
   }
 
   .exorcismImg:nth-child(1)::before{
-    right: 0;
+    left: 0;
   }
 
   .exorcismImg:nth-child(2)::before{
-    left: 0;
+    right: 30%;
   }
 
   .exorcismOverlay {

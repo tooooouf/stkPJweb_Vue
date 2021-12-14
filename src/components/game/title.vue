@@ -58,6 +58,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -67,7 +69,6 @@
   position: absolute;
   top: 0;
   width: 100%;
-  max-width: 1280px;
   height: 100%;
   background: url(~@/assets/gamepage/タイトル/title_portrait.png) top center / cover no-repeat;
   background-position-y: 5vh;
@@ -76,8 +77,8 @@
 .titleLogo{
   position: absolute;
   bottom: unset;
-  right: 10vw;
-  width: 40vw;
+  right: 10%;
+  width: 40%;
   height: auto;
   /*background: url(~@/assets/gamepage/タイトル/ロゴver4.1.png) top center / cover no-repeat;*/
 }

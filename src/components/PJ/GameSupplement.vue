@@ -58,7 +58,7 @@
                 30cm程度の筒状であることにより、両手で持つことが必要になります。そうすることで振る際には腕だけでなく、肩や大胸筋も動かすことが可能に。
               </p>
               <p>
-                また、JoyCon単体に比べ重さが増すため、腕の腕力を鍛えることも可能になりました。
+                また、JoyCon単体に比べ重さが増すため、腕への負荷を増加させました。
               </p>
               <div class="dividingLine"></div>
               <div class="readmore" @click="openController=false">
