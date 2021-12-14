@@ -1,4 +1,5 @@
 # stkpjweb
+**[IMPORTANT] Asset files (imgs, fonts etc...) are not include**
 
 ## Project setup
 ```
@@ -22,3 +23,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+&copy; 2021 SatakeProject All rights reserved
