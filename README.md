@@ -1,4 +1,5 @@
 # stkpjweb
+**[IMPORTANT] Asset files (imgs, fonts etc...) are not include**
 
 ## Project setup
 ```
