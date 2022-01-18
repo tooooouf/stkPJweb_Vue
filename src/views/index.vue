@@ -10,7 +10,6 @@
       <Game/>   
       <Member/>
       <Activity/>
-      <Comingsoon/>
       <Footer/>
     </div>
 </template>
@@ -23,7 +22,6 @@ import About from '@/components/PJ/About.vue'
 import Game from '@/components/PJ/Game.vue'
 import Member from '@/components/PJ/Member.vue'
 import Activity from '@/components/PJ/Activity.vue'
-import Comingsoon from '@/components/PJ/Comingsoon.vue'
 import Footer from '@/components/PJ/Footer.vue'
 import jQuery from 'jquery'
 
@@ -37,7 +35,6 @@ export default {
     Game,
     Member,
     Activity,
-    Comingsoon,
     Footer
   },
 }
