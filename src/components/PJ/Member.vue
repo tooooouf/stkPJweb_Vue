@@ -140,9 +140,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/imgs/background/memberbg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(../../assets/imgs/background/memberbg.png) top left / cover no-repeat;
     z-index: 0;
 }
 
