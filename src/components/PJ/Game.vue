@@ -202,6 +202,12 @@ export default ({
     color: #4B4B4B;
     line-height: 1;
     cursor: pointer;
+    animation: buttonAnim 2s ease-in-out infinite;
+    animation-delay: 1s
+}
+
+.readmore:hover{
+    animation: buttonAnim 1s ease-in-out infinite;
 }
 
 .readmore a{
@@ -239,6 +245,19 @@ export default ({
 @media screen and (max-width:768px) {
     .gameimgwrap{
         height: auto;
+    }
+}
+
+@keyframes buttonAnim {
+    20%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+
+    80%{
+        transform: scale(1);
     }
 }
 

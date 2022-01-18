@@ -146,6 +146,11 @@ export default{
   cursor: pointer;
 }
 
+.modalCard:hover{
+  transform: scale(1.05);
+  transition-duration: .5s;
+}
+
 .modalCard_img{
   border-radius: 100px;
   max-width: 200px;
