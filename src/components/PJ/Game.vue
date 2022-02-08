@@ -20,10 +20,11 @@
                 <p>ゲーム専用サイトへGO！</p>
                 <span></span>
             </div>
+            <span class="dividingLine"></span>
             <div class="gameMovie">
-                <h2>悪霊ばすたー紹介動画</h2>
+                <h2>悪霊ばすたー 紹介動画</h2>
                 <div class="gameMovie_flame">
-                    <video class="gameVideo" playsinline autoplay muted controls preload="none" poster="@/assets/gamepage/タイトル/タイトル画面_文字無し.jpg" src="@/assets/movie/悪霊ばすたープレイ動画.mp4"/>                   
+                    <iframe class="gameVideo" src="https://drive.google.com/file/d/1XDAnBdY8EqvmYVV2Z2SaAFMBdVv2xtpF/preview" allow="autoplay"></iframe>                   
                 </div>
             </div>
             <span class="dividingLine"></span>
@@ -153,15 +154,18 @@ export default ({
 
 .gameMovie{
     text-align: center;
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
 }
 
 .gameMovie_flame{
     position: relative;
-    box-sizing: border-box;
     width: 100%;
-    max-width: 700px;
     border: #73239E solid 5px;
-    padding: 1%;
+    margin: 0 auto;
+    padding: 56.25% 0 0;
+    box-sizing: border-box;
     z-index: 1;
 }
 
@@ -186,6 +190,16 @@ export default ({
     bottom: 30px;
     left: -10px;
     right: -10px;
+}
+
+.gameVideo{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border: 0;
+    box-sizing: border-box;
 }
 
 .readmore{
@@ -245,6 +259,10 @@ export default ({
 @media screen and (max-width:768px) {
     .gameimgwrap{
         height: auto;
+    }
+
+    .gameMovie{
+        padding: 0;
     }
 }
 
