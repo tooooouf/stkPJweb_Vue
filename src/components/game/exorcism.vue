@@ -6,10 +6,7 @@
       </div>
       <div class="exorcismCard">
         <div class="exorcismImg">
-          <video playsinline autoplay muted controls preload="none" loop poster="@/assets/gamepage/タイトル/タイトル画面_文字無し.jpg" src="@/assets/movie/悪霊ばすたープレイ動画.mp4"/>
-          <div class="exorcismOverlay">
-            <img src="" alt="">
-          </div>
+          <iframe class="exorcismVideo" src="https://drive.google.com/file/d/1XDAnBdY8EqvmYVV2Z2SaAFMBdVv2xtpF/preview" allow="autoplay"></iframe>
         </div>
         <div class="exorcismText">
           <p>
@@ -73,6 +70,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   width: 100%;
   margin-bottom: 100px;
@@ -84,11 +82,29 @@
   padding: 10px;
 }
 
+.exorcismImg:first-child{
+  padding-top: 32.5%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.exorcismVideo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
 .exorcismImg::before{
   position: absolute;
   content: "";
   width: 15%;
   height: 100%;
+  z-index: 4;
 }
 
 .exorcismImg:nth-child(1)::before{
@@ -101,10 +117,6 @@
   top: -20px;
   right: 30%;
   background: url(~@/assets/gamepage/悪霊退散/guardLabel.png) top center / contain no-repeat;
-}
-
-.exorcismOverlay{
-  position: absolute;
 }
 
 .exorcismText{
@@ -128,6 +140,10 @@
   
   .exorcismImg, .exorcismText{
     width: 100%;
+  }
+
+  .exorcismImg:first-child{
+    padding-top: 56%;
   }
 
   .exorcismText{
