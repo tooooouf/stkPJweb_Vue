@@ -17,11 +17,11 @@
                 <div class="presenContents">
                     <h3>中間発表</h3>
                     <div class="slideBox">
-                        <iframe class="slide" src="https://docs.google.com/presentation/d/e/2PACX-1vQiNJOBfL_ztIzyATln6YQoRX890XgfnPBp_CEP75fF0X6FmzSD1bJSBP8fckUSkgzsHytquYmQxhFj/embed?start=false&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        <iframe class="slide" src="https://docs.google.com/presentation/d/e/2PACX-1vQiNJOBfL_ztIzyATln6YQoRX890XgfnPBp_CEP75fF0X6FmzSD1bJSBP8fckUSkgzsHytquYmQxhFj/embed?start=false&loop=true&delayms=10000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                     </div>
                     <h3>最終発表</h3>
                     <div class="slideBox">
-                        <iframe class="slide" src="https://docs.google.com/presentation/d/e/2PACX-1vQks8suF2tEdSh4J0rC7estkn_vJv4vuGJq5Nqj9gQQ_p-JV2atsVY2Wl0E8S1JKRr101FQN48BaTeN/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        <iframe class="slide" src="https://docs.google.com/presentation/d/e/2PACX-1vQks8suF2tEdSh4J0rC7estkn_vJv4vuGJq5Nqj9gQQ_p-JV2atsVY2Wl0E8S1JKRr101FQN48BaTeN/embed?start=false&loop=false&delayms=10000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                     </div>
                 </div>
             </div>
@@ -134,23 +134,18 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
 }
 
 .slideBox{
     position: relative;
     width: 100%;
-    height: 100%;
-    max-width: 960px;
-    max-height: 569px;
     border: solid 5px #4EA1FF;
-    padding: 1%;
-    z-index: 15;
-}
-
-.slide{
-    position: relative;
-    width: 100%;
-    z-index: 990;
+    margin: 0 auto;
+    padding: 60% 0 0;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 .slideBox::before, .slideBox::after{
@@ -158,7 +153,8 @@
     position: absolute;
     display: block;
     background-color: #FFFFFF;
-    z-index: 20;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .slideBox::before{
@@ -173,6 +169,16 @@
     bottom: 30px;
     left: -5px;
     right: -5px;
+}
+
+.slide{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border: 0;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width:768px) {
@@ -196,12 +202,12 @@
         height: 70vh;
     }
 
-    .slide{
-        height: 35vh;
-    }
-
     .presenHead{
         width: 100%;
+    }
+
+    .presenContents{
+        padding: 0;
     }
 }
 
