@@ -1,5 +1,6 @@
 <template>
   <div class="gameSupplement">
+    <h2>制作秘話</h2>
     <div class="modalCard" @click="openController=true">
       <div class="modalCard_img">
         <img src="@/assets/imgs/game/DSCF0612.jpg" alt="">
